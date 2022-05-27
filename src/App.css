@@ -42,7 +42,7 @@ footer {
 }
 
 .course-card{
-  width: 90%;
+  width: 70%;
   padding: 10px;
   border-radius: 4px;
   margin: 20px;
@@ -62,18 +62,102 @@ footer {
   list-style: none;
 }
 .curse-title{
-  left: 1%;
   width: 335px;
   height: 44px;
+  position: relative;
 }
 .course-author{
-  
-  left: 12%;
   width: 117px;
   height: 19px;
+  position: relative;
+  left:2%
 }
 .course-price{
-  left: 25%;
   width: 106px;
   height: 24px;
+  position: relative;
 }
+.cart{
+  position: fixed;
+  left: 75%;
+  width: 20%;
+  top: 18%;
+  background: #F5F5F5 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+}
+.button{
+  background: #FF6738;
+  color: white;
+  border: #080808;
+  position: relative;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 15px 32px;
+}
+table{
+  width: 100%;
+  text-align: left;
+}
+td{
+  width: 25%;
+}
+h4{
+  text-align: left;
+  padding-left: 25px;
+}
+.pageBanner{
+  padding-left: 25px;
+  vertical-align: middle;
+  width: 100%;
+  height: 60px;
+  opacity: 1;
+  background: #080808;
+  color:#F5F5F5;
+  text-align: left;
+  font: normal normal 600 20px/24px Montserrat;
+  letter-spacing: 0px;
+}
+.main{
+  padding-top: 10px;
+  padding-left: 65px;
+  padding-right: 90px;
+}
+.dp{
+  top:20%;
+  left:4.5%;
+  position: absolute;
+}
+.profileData{
+  top:20%;
+  left:25%;
+  width:70.5%;
+  position: absolute;
+  box-shadow: 0px 3px 6px #00000029;
+  height: 72%;
+  padding-left: 10px;
+}
+.profileInner{
+  box-shadow: 0px 3px 6px #00000029;
+  position: relative;
+  top:50%;
+  left:3%;
+  padding-left: 6%;
+  padding-top: 2%;
+}
+.profilebutton{
+  background: #FF6738;
+  color: white;
+  border: #080808;
+  position: relative;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 15px 32px;
+  position: absolute;
+  left:85%;
+  top: 80%;
+}
+
+
+
+
+

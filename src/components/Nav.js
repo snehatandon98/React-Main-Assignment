@@ -18,7 +18,7 @@ function Nav() {
               <NavLink className='linkstyle' to='/myWishlist'>
               <li className='nav-headings'>MY WISHLIST</li>
               </NavLink>
-              <NavLink to='/shoppingCart'>
+              <NavLink to='/cartDetails'>
               <li className='nav-headings'><img src={Shopping_cart} alt="Shopping Cart" /></li>
               </NavLink>
               <NavLink to='/profile'>

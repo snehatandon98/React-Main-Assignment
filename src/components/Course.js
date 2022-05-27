@@ -3,15 +3,21 @@ import '../App.css'
  
 const Course = (props) => {
     const {tags, details, description, discounted_price, actual_price, author, title, id} = props.course;   
+    
     return (
         <div className="container">
             <div className="course-card">
-            <ul className="course-detail">  
-            <li className='course-title'>{title}</li> 
-            <li className='course-author'>{author}</li> 
-            <li className='course-price'>{actual_price}</li> 
-            <li> <button onClick={() => props.addCourse(props.course)}>ADD TO CART</button> </li>
-            </ul>
+            <table className="table table-stripped">  
+            <tbody>
+                <tr>
+                    <td className='course-title'>{title}</td> 
+                    <td className='course-author'>{author}</td> 
+                    <td className='course-price'>Rs. {actual_price}</td> 
+                    <td> <button className='button' onClick={() => props.addCourse(props.course)}>ADD TO CART</button> </td>
+                </tr>
+                <tr className='button'>{tags}</tr>
+            </tbody>
+            </table>
             </div>
         </div>
     );

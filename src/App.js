@@ -3,7 +3,7 @@ import Home from './pages/Home';
 import ShopCourses from './pages/ShopCourses'
 import MyWishlist from './pages/MyWishlist'
 import Profile from './pages/Profile'
-import ShoppingCart from './pages/ShoppingCart'
+import Cart from './pages/CartDetails'
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import './App.css';
 
@@ -15,7 +15,7 @@ function App() {
           <Route path='/' element={<Home/>}/>
           <Route path='/courses' element={<ShopCourses/>}/>
           <Route path='/myWishlist' element={<MyWishlist/>}/>
-          <Route path='/shoppingCart' element={<ShoppingCart/>}/>
+          <Route path='/cartDetails' element={<Cart/>}/>
           <Route path='/profile' element={<Profile/>}/>
         </Routes>
       </Router>
