@@ -25,10 +25,12 @@ function ShopCourses() {
       <div className='main'>
         <div className='pageBanner'> Discover Latest Courses on React</div>
         <h4>All Courses</h4>
+        <div className='scrollCourse'>
         <div>
           {
             course.map(pd => <Course course={pd} addCourse={addCourse}></Course>)
           }
+        </div>
         </div>
         <div>
           <Cart cart={cart}></Cart>

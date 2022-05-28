@@ -35,7 +35,8 @@ footer {
   background: #F5F5F5 0% 0% no-repeat padding-box;
   position: fixed;
   width: 100%;
-  bottom: 0;
+  bottom: 0%;
+  left: 0;
   color: white;
   min-height: 50px;
   text-decoration: none;
@@ -47,43 +48,93 @@ footer {
   border-radius: 4px;
   margin: 20px;
   float: left;
-  background: #F5F5F5 0% 0% no-repeat padding-box;
+  position: relative;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
+  font-family: Montserrat;
 }
 .course-detail{
   width: 100%;
   display: flex;
   justify-content: left;
   text-align: left;
-  font: normal normal 300 16px/19px Montserrat;
   letter-spacing: 0px;
-  color: #080808;
+  color: #08080800;
   opacity: 1;
   list-style: none;
 }
-.curse-title{
+.course-title{
   width: 335px;
   height: 44px;
   position: relative;
+  font-weight: bold;
+  
 }
 .course-author{
   width: 117px;
   height: 19px;
   position: relative;
+  color: #868383;
   left:2%
 }
 .course-price{
   width: 106px;
   height: 24px;
   position: relative;
+  font-weight: bolder;
+}
+.course-discount{
+  width: 62px;
+  height: 19px;
+  position: relative;
+}
+.course-wishlist{
+  width: 26px;
+  height: 25px;
+}
+#wishlist-button{
+  border: #F5F5F5;
+  width: 26px;
+  height: 25px;
+  cursor: pointer;
+  background: transparent url('./images/Path\ 28\ \(1\).svg') 0% 0% no-repeat padding-box;
+}
+#wishlist-button::after{
+  content: none;
+  background-color:#F5E73C;
+  background: transparent url('./images/Path\ 28.svg') 0% 0% no-repeat padding-box;
+}
+#wishlist-button:checked{
+  content: none;
+  background-color:#F5E73C;
+  background: transparent url('./images/Path\ 28.svg') 0% 0% no-repeat padding-box;
 }
 .cart{
   position: fixed;
   left: 75%;
   width: 20%;
   top: 18%;
-  background: #F5F5F5 0% 0% no-repeat padding-box;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
+}
+hr{
+  border-top: 1px  #a09595;
+}
+.tile{
+  padding-left: 15px;
+  text-align: left;
+  font-family: Montserrat; 
+  font-size: medium;
+  list-style: none;
+}
+.price{
+  padding-right: 20px;
+  text-align: right;
+  font-family: Montserrat; 
+  font-size: 15px;
+  list-style: none;
+  font-weight: bold;
+  
 }
 .button{
   background: #FF6738;
@@ -93,6 +144,7 @@ footer {
   border-radius: 5px;
   font-size: 16px;
   padding: 15px 32px;
+  cursor: pointer;
 }
 table{
   width: 100%;
@@ -131,10 +183,20 @@ h4{
   top:20%;
   left:25%;
   width:70.5%;
-  position: absolute;
+  position: relative;
   box-shadow: 0px 3px 6px #00000029;
-  height: 72%;
+  height: 90%;
   padding-left: 10px;
+}
+.scrollDiv{
+  margin-bottom: 50px;
+  overflow-y: scroll;
+  height: 600px;
+}
+
+.scrollCourse{
+  overflow-y: auto;
+  max-height: 540px;
 }
 .profileInner{
   box-shadow: 0px 3px 6px #00000029;
@@ -153,8 +215,67 @@ h4{
   font-size: 16px;
   padding: 15px 32px;
   position: absolute;
-  left:85%;
-  top: 80%;
+  left:80%;
+  top: 85%;
+}
+input[type="checkbox"]{
+  appearance: none;
+  -webkit-appearance: none;
+  height:20px;
+  width: 20px;
+  background-color:#E0E5F8;
+  border-radius: 5px;
+  cursor: pointer;
+  display:flexbox;
+}
+input[type="checkbox"]:after{
+  justify-content: space-around;
+  text-align: center;
+  font-weight: 900;
+  content: "\2713";
+  font-size: 18px;
+  color:white;
+  display: none;
+  outline: none;
+}
+input[type="checkbox"]:checked{
+  background-color: #FF6738;
+}
+input[type="checkbox"]:checked:after{
+  display: block;
+}
+input[type="radio"]{
+  appearance: none;
+  -webkit-appearance: none;
+  height:20px;
+  width: 20px;
+  cursor: pointer;
+  display:flexbox;
+  background-color:#E0E5F8;
+  border-radius: 10px;
+}
+input[type="radio"]:after{
+  content: "\25C9";
+  font-size: 20px;
+  color:#FF6738;
+  display: none;
+  outline: none;
+}
+input[type="radio"]:checked{
+  background-color: white;
+}
+input[type="radio"]:checked:after{
+  display: block;
+}
+.tag{
+  background: #FF6738;
+  color: white;
+  border: #080808;
+  position: relative;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 5px 10px;
+  width: auto;
 }
 
 

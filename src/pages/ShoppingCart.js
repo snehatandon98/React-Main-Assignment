@@ -7,17 +7,28 @@ const Cart = (props) =>{
   let total = 0;
   for (let i = 0; i < cart.length; i++) {
     const course = cart[i];
-    total = total + Number(course.actual_price);
+    if (course.discounted_price){
+      total = total + Number(course.discounted_price);
+    }
+    else{
+      total = total + Number(course.actual_price);
+    }
+    
   }
 const grandTotal=total
   
 return (
     <div className='container'>
       <div className='cart'>
+      <div className='scrollCourse'>
       <h4 >Your Cart Details</h4> <hr/>
-      <h6>Items Ordered: {props.cart.length}</h6>
-      <h6>Product Price: ${total}</h6>
-      <h5>Total Price: ${grandTotal}</h5>
+      {
+        cart.map((c, sIndex) => {
+          return <p> <li className='tile'> {c.title} </li><li className='price'>Rs.{c.actual_price}/- <hr/></li></p>;
+          })
+      }
+      <h5>Total Price: Rs.{grandTotal}/-</h5>
+      </div>
       </div>
     </div>
   );
