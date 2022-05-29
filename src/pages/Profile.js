@@ -92,15 +92,15 @@ class profile extends Component{
             <td><label>Last Name</label></td>
           </tr>
           <tr>
-          <td><input type='text' value={this.state.displayName} onChange={this.handleDisplayNameChange} required/></td>
-            <td><input type='text' value={this.state.firstName} onChange={this.handleFirstNameChange} required/></td>
-            <td><input type='text' value={this.state.lastName} onChange={this.handleLastNameChange} required/></td>
+          <td><input type='text' value={this.state.displayName} onChange={this.handleDisplayNameChange} required minLength={7}/></td>
+            <td><input type='text' value={this.state.firstName} onChange={this.handleFirstNameChange} required minLength={3}/></td>
+            <td><input type='text' value={this.state.lastName} onChange={this.handleLastNameChange} required minLength={3}/></td>
           </tr>
           <tr>
             <td><label>About Yourself</label></td>
           </tr>
           <tr >
-            <td><textarea value={this.state.comments} onChange={this.handleCommentsChange} required></textarea></td>
+            <td><textarea value={this.state.comments} onChange={this.handleCommentsChange}></textarea></td>
           </tr>
           <tr>
             <td colSpan={2}><label>Area of Interest</label></td>
@@ -164,7 +164,7 @@ class profile extends Component{
                   <td colSpan={2}><label>Mention your Role</label></td>
                   </tr>
                   <tr>
-                  <td><textarea value={this.state.designation} onChange={this.handleDesignationChange} required></textarea></td>
+                  <td><textarea value={this.state.designation} onChange={this.handleDesignationChange} required minLength={8}></textarea></td>
                   </tr>
                 </table>
               </div>

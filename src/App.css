@@ -113,7 +113,7 @@ footer {
   position: fixed;
   left: 75%;
   width: 20%;
-  top: 18%;
+  top: 24%;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
 }
@@ -277,6 +277,39 @@ input[type="radio"]:checked:after{
   padding: 5px 10px;
   width: auto;
 }
+.sort{
+  width: 100%;
+  display: flex;
+  list-style: none;
+  position: relative;
+  font-family: Montserrat; 
+  font-size:larger;
+  font-weight: bolder;
+  padding-top: 10px;
+  justify-content: space-between;
+  margin-left: 30px;
+  padding-bottom: 10px;
+}
+.all-courses{
+  font-family: Montserrat; 
+  font-size:larger;
+  font-weight: bolder;
+  list-style: none;
+}
+.sort-button{
+  position: relative;
+  left: 70px;
+  border-radius: 5px;
+  background: #FFFFFF;
+  color: #868383;
+}
+.search-bar{
+  position: relative;
+  right: 30px;
+  width: 250px;
+  height: 20px;
+}
+
 
 
 

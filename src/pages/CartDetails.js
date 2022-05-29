@@ -1,13 +1,21 @@
 import React from 'react'
 import Home from './Home'
+import Cart from './ShoppingCart'
+import Course from '../components/Course';
 
-function CartDetails() {
-  return (
-    <div>
-        <Home/>
-        <p>Cart Details</p>
-        
+const CartDetails= (props) =>{
+  const cart = props
+  console.log(cart)
+  
+  return(
+    <div className='container'>
+     
+      <h4>{
+        cart.title
+        }</h4>
+      
     </div>
+    
   );
 }
 
