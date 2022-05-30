@@ -100,7 +100,7 @@ class profile extends Component{
             <td><label>About Yourself</label></td>
           </tr>
           <tr >
-            <td><textarea value={this.state.comments} onChange={this.handleCommentsChange}></textarea></td>
+            <td><textarea value={this.state.comments} cols="40" rows="8" onChange={this.handleCommentsChange}></textarea></td>
           </tr>
           <tr>
             <td colSpan={2}><label>Area of Interest</label></td>

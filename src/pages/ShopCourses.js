@@ -73,7 +73,10 @@ function ShopCourses() {
               else if (pd.title.toLowerCase().includes(query.toLowerCase())) {
                 return pd;
               }
-             }).map(pd => <Course course={pd} addCourse={addCourse} ></Course>)
+              else if ((pd.author.toLowerCase().includes(query.toLowerCase()))){
+                return pd;
+              }
+             }).map(pd => <Course course={pd} addCourse={addCourse} key={pd.id} ></Course>)
           }
         </div>
         </div>

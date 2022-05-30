@@ -116,7 +116,10 @@ footer {
   top: 24%;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
+  font-family: Montserrat;
+  padding-bottom: 2%;
 }
+
 hr{
   border-top: 1px  #a09595;
 }
@@ -145,6 +148,7 @@ hr{
   font-size: 16px;
   padding: 15px 32px;
   cursor: pointer;
+  font-family: Montserrat;
 }
 table{
   width: 100%;
@@ -154,11 +158,12 @@ td{
   width: 25%;
 }
 h4{
-  text-align: left;
+  text-align: center;
   padding-left: 25px;
 }
 .pageBanner{
   padding-left: 25px;
+  padding-top: 25px;
   vertical-align: middle;
   width: 100%;
   height: 60px;
@@ -175,18 +180,22 @@ h4{
   padding-right: 90px;
 }
 .dp{
-  top:20%;
+  top:23%;
   left:4.5%;
   position: absolute;
 }
 .profileData{
-  top:20%;
+  top:6%;
   left:25%;
-  width:70.5%;
+  width:70%;
+  height:max-content;
   position: relative;
   box-shadow: 0px 3px 6px #00000029;
-  height: 90%;
-  padding-left: 10px;
+  height: 120%;
+  padding-left: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: Montserrat;
 }
 .scrollDiv{
   margin-bottom: 50px;
@@ -203,8 +212,11 @@ h4{
   position: relative;
   top:50%;
   left:3%;
+  width: 200%;
   padding-left: 6%;
-  padding-top: 2%;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  font-family: Montserrat;
 }
 .profilebutton{
   background: #FF6738;
@@ -212,11 +224,13 @@ h4{
   border: #080808;
   position: relative;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: large;
+  font-weight: bold;
   padding: 15px 32px;
   position: absolute;
   left:80%;
   top: 85%;
+  font-family: Montserrat;
 }
 input[type="checkbox"]{
   appearance: none;
@@ -298,16 +312,18 @@ input[type="radio"]:checked:after{
 }
 .sort-button{
   position: relative;
-  left: 70px;
+  left: 150px;
   border-radius: 5px;
   background: #FFFFFF;
   color: #868383;
+  font-family: Montserrat;
 }
 .search-bar{
   position: relative;
   right: 30px;
   width: 250px;
   height: 20px;
+  font-family: Montserrat;
 }
 
 

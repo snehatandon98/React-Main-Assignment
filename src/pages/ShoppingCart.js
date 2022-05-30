@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from "react-router-dom";
 import Home from './Home'
 import '../App.css'
 
@@ -15,12 +16,17 @@ const Cart = (props) =>{
       total = total + Number(course?.actual_price);
     } 
   }
+  let navigate = useNavigate(); 
+  const routeChange = () =>{ 
+    let path = '/cartDetails'; 
+    navigate(path);
+  }
   const grandTotal=total
 return (
     <div className='container'>
       <div className='cart'>
       <div className='scrollCourse'>
-      <h4 >Your Cart Details</h4> <hr/>
+      <h4>Your Cart Details</h4> <hr/>
       {
         cart?.map((c, sIndex) => {
           real_price=""
@@ -34,6 +40,7 @@ return (
           })
       }
       <h5>Total Price: Rs.{grandTotal}/-</h5>
+      <button className='button' onClick={routeChange}>Checkout</button>
       </div>
       </div>
     </div>

@@ -29,7 +29,7 @@ const Course = (props) => {
                 <tr ><td>
                     {
                         tags.map((tag, sIndex) => {
-                            return <td className='tag'> {tag} </td>;
+                            return <td key={tag} className='tag'> {tag} </td>;
                           })
                     }
                     </td>
